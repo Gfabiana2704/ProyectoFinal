@@ -1,0 +1,59 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.product-container {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.details {
+    padding: 20px;
+    background-color: #f3f8ff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.details h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0056b3;
+}
+.details p {
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #555;
+}
+.details .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0074d9;
+}
+.btn-custom {
+    background-color: #0056b3;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #0074d9;
+    color: #fff;
+}
+.form-select {
+    margin-bottom: 20px;
+    width: 50%;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f8ff;
+    color: #333;
+    border-top: 5px solid #c8e1ff;
