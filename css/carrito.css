@@ -52,3 +52,28 @@
         .btn-custom:hover {
             background-color: #0074d9;
         }
+        .custom-navbar {
+            background-color: #f3f8ff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #c8e1ff;
+        }
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: #333;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        .nav-link:hover {
+            color: #0056b3;
+        }
+        .navbar-toggler-icon {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 3px;
+        }
