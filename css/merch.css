@@ -3,6 +3,9 @@
             background-color: #fdfdfd;
             color: #333;
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
         }
         .header {
             text-align: center;
@@ -31,34 +34,39 @@
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
+            gap: 15px;
+            padding: 10px;
         }
         .product-card {
+            padding: 10px;
+            margin: 5px 0;
             background-color: #ffffff;
             border: 1px solid #ddd;
             border-radius: 10px;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .product-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
         .product-card img {
-            height: 250px;
+            height: 180px;
             width: 100%;
             object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
         .product-card p {
+            margin: 2px 0;
+            line-height: 1.4;
             padding: 10px;
             font-weight: 500;
+            font-size: 0.9rem;
             color: #555;
         }
         .footer {
             text-align: center;
-            padding: 20px;
+            padding: 15px 10 px;
             background-color: #f3f8ff;
             color: #333;
             border-top: 5px solid #c8e1ff;
@@ -87,4 +95,22 @@
         .navbar-toggler-icon {
             background-color: rgba(0, 0, 0, 0.6);
             border-radius: 3px;
+        }
+        .container {
+            padding: 10px 15px;
+        }
+        h2 {
+            margin: 10px 0 20px;
+        }
+        form{
+            margin-top: 10px;
+        }
+        .form-label, .form-select, .btn {
+            margin: 5px 0;
+        }
+        .product-card p:first-of-type{
+            margin-bottom: 5px;
+        }
+        .product-card p: :last-of-type {
+            margin-bottom: 5px; 
         }
