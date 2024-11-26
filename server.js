@@ -4,7 +4,7 @@ const mysql = require('mysql2');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000; // Usa un puerto dinámico o por defecto 3000
 
 // Middleware
 app.use(bodyParser.json());
@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root', // Tu usuario
-  password: 'alan2210', // Tu contraseña
+  password: 'Rebeca#2704', // Tu contraseña
   database: 'dummping', // Nombre de la base de datos
 });
 
@@ -120,7 +120,8 @@ app.post('/pago', (req, res) => {
   });
 });
 
-// Escuchar en el puerto 3000
+// Escuchar en el puerto dinámico
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+
