@@ -1,15 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 900px;
     margin: 30px auto;
     padding: 20px;
-    background: #ffffff;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -19,20 +21,22 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    color: #0056b3;
 }
 
 .btn-pay {
-    background-color: #28a745;
-    color: white;
-    border: none;
+    background-color: #f3f8ff;
+    color: #0056b3;
+    border: 1px solid #c8e1ff;
     padding: 10px 20px;
     font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
 }
 
 .btn-pay:hover {
-    background-color: #218838;
+    background-color: #e1efff;
+    color: #0056b3;
 }
 
 .total-box {
@@ -50,4 +54,52 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
+}
+
+.row .col-md-6 {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.mb-3 label {
+    font-weight: bold;
+    color: #555;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
+.btn-back {
+    background-color: #f3f8ff;
+    color: #0056b3;
+    border: 1px solid #c8e1ff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #e1efff;
+    color: #0056b3;
 }
